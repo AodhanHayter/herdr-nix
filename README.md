@@ -9,7 +9,7 @@ Inspired by [sadjow/claude-code-nix](https://github.com/sadjow/claude-code-nix).
 ### Run once
 
 ```bash
-nix run github:aodhan-hayter/herdr-nix
+nix run github:AodhanHayter/herdr-nix
 ```
 
 ### Project dev shell
@@ -19,7 +19,7 @@ nix run github:aodhan-hayter/herdr-nix
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    herdr-nix.url = "github:aodhan-hayter/herdr-nix";
+    herdr-nix.url = "github:AodhanHayter/herdr-nix";
   };
 
   outputs = { self, nixpkgs, herdr-nix }: {
@@ -34,7 +34,7 @@ nix run github:aodhan-hayter/herdr-nix
 
 ```nix
 {
-  inputs.herdr-nix.url = "github:aodhan-hayter/herdr-nix";
+  inputs.herdr-nix.url = "github:AodhanHayter/herdr-nix";
 
   outputs = { nixpkgs, herdr-nix, ... }: {
     nixosConfigurations.example = nixpkgs.lib.nixosSystem {
@@ -53,7 +53,7 @@ nix run github:aodhan-hayter/herdr-nix
 
 ```nix
 {
-  inputs.herdr-nix.url = "github:aodhan-hayter/herdr-nix";
+  inputs.herdr-nix.url = "github:AodhanHayter/herdr-nix";
 
   outputs = { home-manager, herdr-nix, ... }: {
     homeConfigurations."me" = home-manager.lib.homeManagerConfiguration {
