@@ -4,6 +4,21 @@ Nix flake packaging the [herdr](https://github.com/ogulcancelik/herdr) CLI — a
 
 Inspired by [sadjow/claude-code-nix](https://github.com/sadjow/claude-code-nix).
 
+## Binary cache
+
+Builds are pushed to a public Cachix cache. Consumers using this flake directly pick it up via `nixConfig`. To opt in system-wide:
+
+```bash
+nix run nixpkgs#cachix -- use herdr-nix
+```
+
+Or in `nix.conf`:
+
+```
+extra-substituters = https://herdr-nix.cachix.org
+extra-trusted-public-keys = herdr-nix.cachix.org-1:+AT7TY8E6j/Pe9lB8Vjmp15Y4RPb8YtOnOwr/fboDS8=
+```
+
 ## Install
 
 ### Run once
