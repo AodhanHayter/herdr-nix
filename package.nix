@@ -7,7 +7,7 @@
 }:
 
 let
-  version = "0.6.1";
+  version = "0.6.2";
 
   platformMap = {
     "aarch64-darwin" = "macos-aarch64";
@@ -20,10 +20,10 @@ let
     (throw "herdr is not supported on ${stdenv.hostPlatform.system}. Supported: aarch64-darwin, x86_64-darwin, x86_64-linux, aarch64-linux");
 
   nativeHashes = {
-    "macos-aarch64" = "1jnibmvbpb2wxkm2zmbnk0mmcycinh7p2541d7hi307b7nh8jvqq";
-    "macos-x86_64" = "1bl8y7127rdzsjf0s4zpa05f263jd60szz9rlwkwm7w45vxghmv5";
-    "linux-x86_64" = "17ms7bqkvkrvh0v8qdg815lhypb1f9yl7xlxf92v6pc795i71aw1";
-    "linux-aarch64" = "18q0mhibygw2kksdq1wgq1bgn7w395qhyc06bnlasw416qs17r08";
+    "macos-aarch64" = "03h1z9mvlsscanh0fqh6px7xh2prbx61vrsi4lqqdlqywci2bwjc";
+    "macos-x86_64" = "0isg2l15nphimn57r617145wvqgx0ffhg4i14aa4w8057mw3vwvk";
+    "linux-x86_64" = "12807avbxwdjdc54vfpf01ac4mvvqcdyja23ab8iznx0l1w53s4y";
+    "linux-aarch64" = "0nspvxjrz8p19x0613bzzl64n39ck290xgjhwwlqbqkj7m65g2h8";
   };
 
   nativeBinary = fetchurl {
