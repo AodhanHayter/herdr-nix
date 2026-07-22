@@ -1,3 +1,7 @@
+# !! Archived !!
+
+This is no longer needed as the official repo now has a Nix Flake that can be referenced.
+
 # herdr-nix
 
 Nix flake packaging the [herdr](https://github.com/ogulcancelik/herdr) CLI — an agent multiplexer that lives in your terminal — with automated hourly updates tracking upstream GitHub releases.
